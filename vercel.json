@@ -21,7 +21,6 @@
     }
   ],
   "env": {
-    "PYTHON_VERSION": "3.9",
-    "CI": "false"
+    "PYTHON_VERSION": "3.9"
   }
 }
