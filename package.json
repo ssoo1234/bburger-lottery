@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "아카라이브 댓글 추첨기",
   "private": true,
-  "homepage": ".",
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

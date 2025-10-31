@@ -1,26 +1,11 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build"
-    },
-    {
-      "src": "api/app.py",
-      "use": "@vercel/python"
-    }
+    { "src": "package.json", "use": "@vercel/static-build" },
+    { "src": "api/app.py", "use": "@vercel/python" }
   ],
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "api/app.py"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    }
-  ],
-  "env": {
-    "PYTHON_VERSION": "3.9"
-  }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/app.py" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
