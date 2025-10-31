@@ -14,7 +14,7 @@ function App() {
   const [winners, setWinners] = useState([]);
   const [loading, setLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
-  const [sessionId, setSessionId] = useState('');
+  const [_sessionId, setSessionId] = useState('');
   const [isDrawing, setIsDrawing] = useState(false);
   const [slotMachineWinners, setSlotMachineWinners] = useState([]);
 
