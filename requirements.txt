@@ -3,4 +3,4 @@ Werkzeug==2.2.3
 flask-cors==3.0.10
 requests==2.31.0
 beautifulsoup4==4.12.2
-serverless-wsgi==0.5.3
+serverless-wsgi==1.7.8
