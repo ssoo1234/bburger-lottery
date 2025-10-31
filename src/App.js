@@ -14,7 +14,8 @@ function App() {
   const [winners, setWinners] = useState([]);
   const [loading, setLoading] = useState(false);
   const [statusMessage, setStatusMessage] = useState('');
-  const [_sessionId, setSessionId] = useState('');
+  // eslint-disable-next-line no-unused-vars
+  const [sessionId, setSessionId] = useState('');
   const [isDrawing, setIsDrawing] = useState(false);
   const [slotMachineWinners, setSlotMachineWinners] = useState([]);
 
