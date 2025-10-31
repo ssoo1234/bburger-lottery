@@ -59,7 +59,7 @@ class ArcaLiveCrawler:
         # 1. HTML 소스 코드 가져오기 (세션 사용)
         try:
             # 크롤링 매너를 위해 요청 전에 잠시 대기
-            time.sleep(1.5) # 시간을 1.5초로 더 늘려 봇 감지 회피 시도
+            time.sleep(0.5) # 시간을 1.5초로 더 늘려 봇 감지 회피 시도
             
             # session 객체를 사용하여 요청, 타임아웃 10초 적용
             response = self.session.get(url, headers=self.HEADERS, timeout=10)
