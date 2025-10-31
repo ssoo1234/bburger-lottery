@@ -125,10 +125,11 @@ def crawl_comments():
 
 
 # Vercel 서버리스 함수용 핸들러
+import serverless_wsgi
+
 def handler(event, context):
     """Vercel 서버리스 함수 진입점"""
-    return app(event, context)
-
+    return serverless_wsgi.handle_request(app, event, context)
 
 if __name__ == '__main__':
     print("=" * 60)
